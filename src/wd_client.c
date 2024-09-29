@@ -22,7 +22,7 @@ Last Modefy Date: 20/04/24
 
 #include "scheduler.h" /*scheduler_t*/
 #include "uid.h" /*ilrd_uid_t*/
-#include "wd_client.h" /*SUCCESS_WD*/
+#include "wd.h" /*SUCCESS_WD*/
 
 #ifndef NDEBUG
     #define DEBUG_EXPR(x) (x) 
@@ -344,10 +344,10 @@ static int StopRun(void *param)
 {
     (void)param;
 
-    DEBUG_EXPR(printf("%d Task3\n", getpid()));
-
     if (FINISH == stop_flag)
     {
+        DEBUG_EXPR(printf("%d Task3\n", getpid()));
+
         sem_post(semaphores[OTHER_SEM]);
 
         SchedStop(sched);

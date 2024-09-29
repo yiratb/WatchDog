@@ -8,7 +8,7 @@ Last Modefy Date: 20/04/24
 
 /*gd -pthread ../../src/wd.c ../../src/wd_client.c ../../src/scheduler.c ../../src/task.c ../../src/uid.c ../../src/srtlist.c ../../src/dlist.c ../../src/pqueue.c -I ../../inc/ -o wd*/
 
-#include "wd_client.h"
+#include "wd.h"
 #include <stdio.h>
 
 

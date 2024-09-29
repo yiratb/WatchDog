@@ -11,7 +11,7 @@ Last Modefy Date: 20/04/24
 #include <unistd.h> 
 #include <time.h>
 
-#include "../inc/wd_client.h"
+#include "../inc/wd.h"
  
 
 int main(int argc, const char *argv[])
