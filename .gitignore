@@ -1,0 +1,8 @@
+#ignore all
+*
+
+!makefile
+!makefile
+!Makefile
+!.gitignore
+!*.c
